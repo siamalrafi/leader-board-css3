@@ -1,15 +1,48 @@
-        /* top players style */
-        .players {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
+       /* fonts */
+       @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,700&family=Poppins:wght@500&display=swap');
 
-        .player {
-            display: flex;
-            align-items: center;
-        }
+       /* common style or utilities*/
 
-        .player img {
-            width: 56px;
-            height: 56px;
-        }
+       main {
+           display: flex;
+           justify-content: center;
+       }
+
+       .container {
+           background-color: #FFFFFF;
+           width: 870px;
+           padding: 33px;
+       }
+
+       body {
+           font-family: 'Poppins', sans-serif;
+           background: #F3F1FF;
+
+       }
+
+       /* top players style */
+       .top-players {
+           background-color: #FFFFFF;
+
+       }
+
+       .section-title {
+           color: #562EFF;
+           font-size: 24px;
+
+       }
+
+       .players {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+       }
+
+       .player {
+           display: flex;
+           align-items: center;
+       }
+
+       .player img {
+           width: 56px;
+           height: 56px;
+       }
