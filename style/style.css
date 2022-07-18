@@ -184,7 +184,7 @@
            }
 
            .courses {
-               background-color: green;
+               background-color: rgb(108, 220, 108);
                grid-template-columns: 3, 1fr;
            }
 
