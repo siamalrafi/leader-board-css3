@@ -6,12 +6,15 @@
        main {
            display: flex;
            justify-content: center;
+           flex-direction: column;
+           align-items: center;
        }
 
        .container {
            background-color: #FFFFFF;
            width: 870px;
            padding: 33px;
+           border-radius: 5px;
        }
 
        body {
@@ -22,6 +25,7 @@
 
        hr {
            border: 1px solid #D1D1D1;
+           margin-bottom: 27px;
        }
 
        /* top players style */
@@ -58,4 +62,49 @@
            color: #000000;
            margin-left: 16px;
            font-size: 18px;
+       }
+
+       /* Here is top player complete */
+       /* Top Blogs started */
+       .blogs {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-row-gap: 26px;
+       }
+
+       .blog {
+           display: flex;
+           margin: 5px;
+       }
+
+       .blog img {
+           width: 177px;
+           height: 117px;
+       }
+
+       .blog-info {
+           margin-left: 16px;
+       }
+
+       .blog-title {
+           font-size: 20px;
+       }
+
+       .blog-author {
+           color: #562EFF;
+           font-size: 16px;
+
+       }
+
+       .blog-author a {
+           text-decoration: none;
+           font-size: 16px;
+           color: #562EFF;
+       }
+
+       /* Courses style */
+       .courses .courses-banner img {
+           width: 224px;
+           height: 104px;
+
        }
