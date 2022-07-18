@@ -103,8 +103,89 @@
        }
 
        /* Courses style */
-       .courses .courses-banner img {
+       .courses {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+
+       }
+
+       .course-banner img {
            width: 224px;
            height: 104px;
+       }
+
+       /*  */
+
+       .course-details {
+           height: 269px;
+           width: 252px;
+           left: 565px;
+           top: 1031px;
+           border-radius: 0px;
+       }
+
+       .course-info .filled {
+           color: #FFC014;
+
+       }
+
+       .course-title {
+           font-size: 20px;
+       }
+
+       .course-info {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+       }
+
+       .course-info .empity {
+           color: #AEAEAE;
+           opacity: 0.55;
+       }
+
+       .course-duration {
+           background-color: #88f3d8;
+           border-radius: 50px;
+           opacity: .70;
+       }
+
+       /* Media Quari */
+
+       /* Mobile device */
+       @media only screen and (max-width:688px) {
+           .container {
+               width: 100%;
+           }
+
+           .players,
+           .blog,
+           .courses {
+               grid-template-columns: repeat(1, 1fr);
+           }
+
+           .player,
+           .blog,
+           .courses {
+               flex-direction: column;
+           }
+
+       }
+
+       /* tablet devices */
+       @media only screen and (min-width:688px) and (max-width:922px) {
+           .container {
+               width: 100%;
+           }
+
+           .players {
+               background-color: salmon;
+               grid-template-columns: repeat(2, 1fr);
+           }
+
+           .courses {
+               background-color: green;
+               grid-template-columns: 3, 1fr;
+           }
 
        }
